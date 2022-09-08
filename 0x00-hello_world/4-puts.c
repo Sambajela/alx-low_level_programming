@@ -1,9 +1,9 @@
 #include<stdio.h>
 /**
- * sconst: name of constant
- *
- * Description: this program prints text
- * Return: int
+ * main - print the below
+ * Description: this is a program to print
+ * Programming is like building a multilingual puzzle, followed by a new line
+ * Return: 0
  */
 int main(void)
 {
