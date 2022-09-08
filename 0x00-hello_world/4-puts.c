@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	char string_constant[] = ""Programming is like building a multilingual puzzle";
+	char string_constant[] = "\"Programming is like building a multilingual puzzle";
 
 	puts(string_constant);
 
