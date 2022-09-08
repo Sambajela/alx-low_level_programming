@@ -1,14 +1,14 @@
 #include<stdio.h>
 /**
- * this program does
- * Discription: Prints text below
- * Programming is like building a multilingual puzzle
+ * below is the program purpose
+ * Description: this is a program to print
+ * Programming is like building a multilingual puzzle, followed by a new line.
  */
 int main(void)
 {
-	char str_constant[] = "\"Programming is like building a multilingual puzle";
+	char s_const[] = "\"Programming is like building a multilingual puzzle";
 
-	puts(string_constant);
+	puts(s_constant);
 
 	return (0);
 }
