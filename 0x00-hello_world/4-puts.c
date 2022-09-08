@@ -8,7 +8,7 @@ int main(void)
 {
 	char s_const[] = "\"Programming is like building a multilingual puzzle";
 
-	puts(s_constant);
+	puts(s_const);
 
 	return (0);
 }
