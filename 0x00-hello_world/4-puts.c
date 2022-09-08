@@ -1,7 +1,8 @@
 #include<stdio.h>
 /**
- * Description: this is a program to print
- * Programming is like building a multilingual puzzle, followed by a new line.
+ * This is a put function
+ * Description: it prints text below
+ * Programming is like building a multilingual puzzle.
  */
 int main(void)
 {
