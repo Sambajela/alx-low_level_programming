@@ -1,8 +1,9 @@
 #include<stdio.h>
 /**
- * below is the program purpose
- * Description: this is a program to print
- * Programming is like building a multilingual puzzle, followed by a new line.
+ * Purpose of program below.
+ *
+ * Description: this is a program to print,
+ * Programming is like building a multilingual puzzle.
  */
 int main(void)
 {
