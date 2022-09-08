@@ -1,15 +1,15 @@
 #include<stdio.h>
 /**
- * Purpose of program below.
+ * sconst: name of constant
  *
- * Description: this is a program to print,
- * Programming is like building a multilingual puzzle.
+ * Description: this program prints text
+ * Return: int
  */
 int main(void)
 {
-	char s_const[] = "\"Programming is like building a multilingual puzzle";
+	char sconst[] = "\"Programming is like building a multilingual puzzle";
 
-	puts(s_const);
+	puts(sconst);
 
 	return (0);
 }
