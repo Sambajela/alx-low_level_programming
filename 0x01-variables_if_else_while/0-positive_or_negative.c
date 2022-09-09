@@ -11,27 +11,18 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int num;
-	printf("Enter a number: ");
-	scanf("%d", &num);
-	switch(num > 0)
+	if (n > 0)
 	{
-		case 1:
-			printf("%d is positive");
-		break;
-		case 0:
-			switch (num == 0)
-			{
-				case 0:
-					printf("%d is zero");
-					break;
-				case 1:
-					printf("%d is negative");
-					break;
-			}
-		default:
-			printf("%d is invalid");
-			break;
+		printf("%i is positive\n");
 	}
+	else if (n == 0)
+	{
+		printf("%i is zero\n");
+	}
+	else if (n < 0)
+	{
+		printf("%i is negative\n")
+	}
+	return (0);
 
 }
