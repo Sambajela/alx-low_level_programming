@@ -1,14 +1,14 @@
 #include<stdio.h>
-#include<stdlib.h>
+#include<unstd.h>
 
 /**
  * Main- entry point
  * Description: means to print text
- * Return: 1
+ * Return: Always 1 (success)
  */
-int main(STDOUT_FILENO)
+int main(void)
 {
-	fwrite(STDOUT_FILENO, "and that piece of art is useful\"
+	write(2, "and that piece of art is useful\"
 			- Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
