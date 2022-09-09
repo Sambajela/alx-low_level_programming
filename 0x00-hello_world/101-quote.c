@@ -2,7 +2,8 @@
 #include<unistd.h>
 
 /**
- * Main - entry point
+ * main - entry point
+ *
  * Description: means to print text
  * Return: Always 1 (success)
  */
