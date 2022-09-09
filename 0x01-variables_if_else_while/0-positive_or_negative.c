@@ -11,26 +11,26 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	double num;
+	int num;
 	printf("Enter a number: ");
-	scanf("%lf", &num);
+	scanf("%d", &num);
 	switch(num > 0)
 	{
 		case 1:
-			printf("%lf is positive");
+			printf("%d is positive");
 		break;
 		case 0:
 			switch (num == 0)
 			{
 				case 0:
-					printf("%lf is zero");
+					printf("%d is zero");
 					break;
 				case 1:
-					printf("%lf is negative");
+					printf("%d is negative");
 					break;
 			}
 		default:
-			printf("%lf is invalid");
+			printf("%d is invalid");
 			break;
 	}
 
