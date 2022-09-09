@@ -2,9 +2,11 @@
 #include<time.h>
 #include<stdio.h>
 
-/* more headers got there */
-
-/* betty style doc for function main goes there */
+/**
+ * Main - more headers got there
+ * Description: betty style doc for function main goes there
+ * Return: 0
+ */
 
 int main(void)
 {
