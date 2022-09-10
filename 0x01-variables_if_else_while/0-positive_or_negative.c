@@ -3,7 +3,7 @@
 #include<stdio.h>
 
 /**
- * Main - more headers got there
+ * main - more headers got there
  *
  * Description: betty style doc for function main goes there
  * Return: 0
