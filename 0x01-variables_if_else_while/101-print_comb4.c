@@ -38,7 +38,7 @@ int main(void)
 			{
 				k++;
 			}
-			else if (( j < 56) && (k == 57))
+			else if ((j < 56) && (k == 57))
 			{
 				k = 1 + ++j;
 			}
