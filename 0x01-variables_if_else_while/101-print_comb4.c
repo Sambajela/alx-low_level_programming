@@ -44,7 +44,7 @@ int main(void)
 			}
 			else
 			{
-				j = 1 ++i;
+				j = 1 + ++i;
 				k = 1 + j;
 			}
 		}
