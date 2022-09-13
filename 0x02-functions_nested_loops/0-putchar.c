@@ -1,3 +1,10 @@
+#ifndef MAIN_H_
+#define MAIN_H_
+
+void main(void);
+
+#endif
+
 #include<stdio.h>
 #include<unistd.h>
 #include "main.h"
