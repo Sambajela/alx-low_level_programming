@@ -5,7 +5,7 @@
  * Description: print 24hrs in seconds format
  * Return: 0
  */
-void jack_bauer
+void jack_bauer(void)
 {
 	int hours = 0;
 	int minutes = 0;
