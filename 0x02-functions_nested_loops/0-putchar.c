@@ -1,13 +1,5 @@
-#ifndef MAIN_H_
-#define MAIN_H_
-
-void main(void);
-
-#endif
-
-#include<stdio.h>
-#include<unistd.h>
 #include "main.h"
+
 /**
  * main - print putchar
  *
@@ -16,8 +8,15 @@ void main(void);
  */
 int main(void)
 {
-	char ch = '_putchar';
+	_putchar ('_');
+	_putchar ('p');
+	_putchar ('u');
+	_putchar ('t');
+	_putchar ('c');
+	_putchar ('h');
+	_putchar ('a');
+	_putchar ('r');
+	_putchar ('\n');
 
-	putchar(ch);
 	return (0);
 }
