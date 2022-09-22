@@ -1,48 +1,34 @@
 #include "main.h"
 #include<stdio.h>
 /**
- * _strlen - returns the lenght of string
- * @s: string
- * Return: returns lenght as integer
+ * cap_string - capitalizes all words in a string
+ * @s: string to capitalize
+ *
+ * Return: address of s
  */
 
-int _strlen(char *s)
+char *cap_string(char *s)
 {
-	int len = 0;
+	int i = 0, j;
 
-	while (*(s + len) != '\a')
-		len++;
-	return (len);
-}
+	char a[] = " \t\n,;.!?\"(){}";
 
-/**
- * cap_string - function to capitalize first letter of string
- * @str: string to capitalize
- * Return: return capitalized string
- */
-
-char *cap_string(char *str)
-{
-	int index = 0;
-
-	while (str[++index])
+	while (*(s + i))
 	{
-		while (!(str[index] >= 'a') && (str[index] <= 'z'))
-			index++;
-		if (str[index - 1] == ' ' ||
-				str[index - 1] == '\t' ||
-				str[index - 1] == '\n' ||
-				str[index - 1] == ',' ||
-				str[index - 1] == ';' ||
-				str[index - 1] == '.' ||
-				str[index - 1] == '!' ||
-				str[index - 1] == '?' ||
-				str[index - 1] == '"' ||
-				str[index - 1] == '(' ||
-				str[index - 1] == ')' ||
-				str[index - 1] == '{' ||
-				str[index - 1] == '}')
-			str[index] -= 32;
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		{
+			if (i == 0)
+				*(s + i) -= 'a' - 'A';
+			else
+			{
+				for (j = 0; j <= 12; j++)
+				{
+					if (a[j] == *(s + i - 1))
+						*(s + i) -= 'a' - 'A';
+				}
+			}
+		}
+		i++;
 	}
-	return (str);
+	return (s);
 }
