@@ -9,25 +9,37 @@
 
 void print_number(int n)
 {
-	unsigned int num;
-	
-	if (n < 10 && n >= 0)
+	unsigned int abs;
+	int mult = 1;
+	unsigned int abSCount;
+	int i;
+	int c = 0;
+
+	if (n == 0)
 	{
-		_putchar('0' + n);
-		return;
+		_putchar('0');
 	}
 	if (n < 0)
 	{
-		num = -n;
 		_putchar('-');
+		n += 1;
+		n *= -1;
+		n++;
 	}
-	else
+	abs = n;
+	abSCount = n;
+
+	while (abSCount > 0)
 	{
-		num = n;
+		abSCount /= 10;
+		c++;
 	}
-	if (num >= 10)
+	for (i = 0; i < c - 1; i++)
+		mult *= 10;
+	for (i = 0; i < c; i++)
 	{
-		print_number(num / 10);
+		_putchar(abs / mult);
+		abs = abs % mult;
+		mult /= 10;
 	}
-	_putchar('0' + (num % 1));
 }
