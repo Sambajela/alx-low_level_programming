@@ -9,7 +9,7 @@
  * 
  * Return: void
  */
-void check(char *s, int start, int end, int flag)
+void check(char *s, int start, int end, int *flag)
 {
 	if (start <= end)
 	{
@@ -17,7 +17,7 @@ void check(char *s, int start, int end, int flag)
 			*flag *= 1;
 		else
 			*flag *= 0;
-		checks(s, start + 1, end - 1, flag);
+		check(s, start + 1, end - 1, flag);
 	}
 }
 
@@ -31,7 +31,7 @@ int is_palindrome(char *s)
 {
 	int flag = 1;
 
-	check(s, 0, _strlen_recursion(s) - 1, &flag);
+	check(s, 0, _strlen_recursion(s) - 1, &*flag);
 	return (flag);
 }
 
