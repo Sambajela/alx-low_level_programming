@@ -3,6 +3,7 @@
 /**
  * is_prime - returns the 1 if n is prime
  * @n: num to be checked
+ * @start: parm
  *
  * Return: 1 if prime 0 if otherwise
  *
