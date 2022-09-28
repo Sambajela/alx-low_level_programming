@@ -6,7 +6,7 @@
  * @start: start index
  * @end: end index
  * @flag: flag to indicate if string is a palindrome
- * 
+ *
  * Return: void
  */
 void check(char *s, int start, int end, int *flag)
@@ -22,7 +22,7 @@ void check(char *s, int start, int end, int *flag)
 }
 
 /**
- * is-palindrome - returns the 1 if s is a palindrome
+ * is_palindrome - returns the 1 if s is a palindrome
  * @s: string to be checked
  *
  * Return: 1 if s is a palindrome
