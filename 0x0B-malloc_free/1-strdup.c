@@ -10,7 +10,7 @@ char *_strdup(char *str)
 {
 	char *ptr = str;
 	int count = 0;
-	
+
 	if (str == NULL)
 		return (NULL);
 
@@ -18,15 +18,15 @@ char *_strdup(char *str)
 		count = count + 1;
 
 	ptr = malloc((count + 1) * sizeof(char));
-	
+
 	if (ptr == NULL)
 		return (NULL);
-	
+
 	count = 0;
 	while (*str)
 		ptr[count++] = *str++;
-	
+
 	ptr[count] = *str;
-	
+
 	return (ptr);
 }

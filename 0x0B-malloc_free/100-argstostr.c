@@ -6,8 +6,7 @@
  * @ac: number of arguments to be concatenated
  * @av: input array of arguments
  *
- * Return: a pointer to a new string, or NULL if it fails
- *
+ * Return: a pointer to a new string, or NULL if it fail
  */
 char *argstostr(int ac, char **av)
 {
@@ -16,10 +15,10 @@ char *argstostr(int ac, char **av)
 	int j = 0;
 	int k = 0;
 	char *ptr = NULL;
-	
+
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	
+
 	for (i = 0; i < ac; i++)
 	{
 		while (av[i][k] != '\0')
@@ -35,7 +34,7 @@ char *argstostr(int ac, char **av)
 
 	if (ptr == NULL)
 		return (NULL);
-	
+
 	for (i = 0; i < ac; i++)
 	{
 		while (av[i][k] != '\0')
