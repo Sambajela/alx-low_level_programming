@@ -16,14 +16,14 @@ int main(int argc, char *argv[])
 	int count = 0;
 	int i;
 	int res = 0;
-	
+
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	res = atoi(argv[1]);
-	
+
 	if (res <= 0)
 	{
 		printf("0\n");
