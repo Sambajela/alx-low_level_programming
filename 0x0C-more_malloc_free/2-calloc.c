@@ -17,20 +17,20 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 	ptr = malloc(nmemb * size);
-
 	if (ptr == NULL)
 		return (NULL);
-
 	setm_zero((char *)ptr, size * nmemb);
+
 	return (ptr);
 }
+
+
 /**
  * setm_zero - set memory on zero
  * @ptr: pointer to byte block
  * @size: number of bytes to assign a zero
  *
  * Return: void
- *
  */
 void setm_zero(char *ptr, int size)
 {
