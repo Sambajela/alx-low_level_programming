@@ -8,6 +8,7 @@
  *
  * Return: a void pointer to the allocated memory
  */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *ptr = NULL;
@@ -16,6 +17,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
+
 	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
 		return (NULL);
@@ -32,6 +34,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
  *
  * Return: void
  */
+
 void setm_zero(char *ptr, int size)
 {
 	int i = 0;
