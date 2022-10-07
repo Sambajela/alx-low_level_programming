@@ -98,6 +98,7 @@ int multip(char *n1, char *n2, int ln1, int ln2, char *res)
  *
  * Return: void
  */
+
 void _puts(char *str)
 {
 	while (*str != '\0')
@@ -115,6 +116,7 @@ void _puts(char *str)
  *
  * Return: void
  */
+
 void _putNum(char *n, int len)
 {
 	int i = 0;
@@ -135,6 +137,7 @@ void _putNum(char *n, int len)
  *
  * Return: the length of the string as an int
  */
+
 int _strlen(char *s, int *offs)
 {
 	int count = 0;
@@ -150,9 +153,9 @@ int _strlen(char *s, int *offs)
 		{
 			*offs = *offs + 1;
 			s++;
-
 			continue;
 		}
+
 		if (first != 0)
 			++count;
 		s++;
