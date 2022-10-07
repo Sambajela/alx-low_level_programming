@@ -67,7 +67,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 int check_for_digits(char **av)
 {
 	int i, j;
-	
+
 	for (i = 1; i < 3; i++)
 	{
 		for (j = 0; av[i][j]; j++)
@@ -104,13 +104,12 @@ void init(char *str, int l)
  */
 
 int main(int argc, char *argv[])
-
 {
 	int l1, l2, ln, ti, i;
 	char *a;
 	char *t;
 	char e[] = "Error\n";
-	
+
 	if (argc != 3 || check_for_digits(argv))
 	{
 		for (ti = 0; e[ti]; ti++)
